@@ -1,0 +1,34 @@
+name: EpicStaff
+version: '${project.version}'
+main: github.epicstaff.EpicStaff
+api-version: '1.13'
+website: https://sstudiosdev.github.io/
+softdepend: [PlaceholderAPI]
+
+commands:
+
+  kick:
+    description: kick player
+
+  chatclear:
+    description: Clean the chat
+
+  reload:
+    description: reload plugin
+    usage: /es reload
+
+
+permissions:
+  epicstaff.chatclear:
+    description: gives you permissions to clear chat with /chatclear
+    default: false
+
+
+  epicstaff.reload:
+    description: reload configuration
+    default: false
+
+
+  epicstaff.bypass.chat:
+    description: allows you to enter words and commands that are blocked.
+    default: false

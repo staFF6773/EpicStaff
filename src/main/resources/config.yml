@@ -1,0 +1,77 @@
+# ███████╗██████╗ ██╗ ██████╗███████╗████████╗ █████╗ ███████╗███████╗
+# ██╔════╝██╔══██╗██║██╔════╝██╔════╝╚══██╔══╝██╔══██╗██╔════╝██╔════╝
+# █████╗  ██████╔╝██║██║     ███████╗   ██║   ███████║█████╗  █████╗
+# ██╔══╝  ██╔═══╝ ██║██║     ╚════██║   ██║   ██╔══██║██╔══╝  ██╔══╝
+# ███████╗██║     ██║╚██████╗███████║   ██║   ██║  ██║██║     ██║
+# ╚══════╝╚═╝     ╚═╝ ╚═════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝     ╚═╝
+#
+# we will talk a little about EpicStaff
+# Hello server administrator EpicStaff is a very cool plugin created by srstaff_tv
+# The main function of the plugin is to improve the staff experience of your server
+# the plugin contains multiple moderation modules that you can use to moderate your server in a very easy way.
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       General                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+# General Module in this module there are essential settings of the plugin
+# for example, prefix and other basic settings
+
+prefix: "&8[&aEpicStaff&8]"
+
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Message                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Messages module in this module you can configure
+# all the plugin messages without any problems
+
+no-permission-message: "&cSorry, but you, %player_name%, do not have permission to execute this command."
+player-only: "&cThis command can only be executed by players"
+blocked-message: "&cSorry %player_name% but the word %es-word% is blocked."
+command-locked: "&cSorry %player_name% but you don't have permissions to use the command %es-command%"
+chat-cleared: "&aThe chat has been cleared by %player_name%!"
+incorrect-usage-kick: "&cIncorrect usage: /kick <player>."
+player-not-online: "&cThe player %player_name% is not online."
+player-kicked: "&aYou have kicked %player_name% off the server."
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Chat                           | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Chat module in this module is all about the plugin
+# chat as blocking words commands among other things.
+
+# Requires "epicstaff.bypass.chat & epicstaff.chat" permission.
+module-chat:
+  enabled: true
+
+# All words that will be censored.
+# Separate words with -
+blocked-words:
+  - fuck
+  - nigga
+  - 卐
+  - 卍
+
+# block the command you put in remember to put
+# in a command that exists and separate the commands with -
+blocked-commands:
+  - /example1
+  - /example2
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Kicking                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+# kick module in this module you will be able to configure
+# the epicstaff kick system
